@@ -180,50 +180,72 @@ graph TD
 # Security Features
 
  • **Device Masking** - Emulates different device types to avoid detection
+ 
  • **Rate Limiting** - Prevents API flooding with configurable delays
+ 
  • **Error Handling** - Automatic cooldown after consecutive errors
+ 
  • **Session Security** - Secure session management
 
 Data Storage
 
  • SQLite database for structured data
+ 
  • CSV files for parsed user data
+ 
  • Text logs for deleted messages
+ 
  • Media files storage for attachments
 
 
 Configuration Options
 
  • **DEVICE_SETTINGS** - Customize device fingerprint
+ 
  • **rate_limits** - Adjust request delays and limits
+ 
  • **SECURITY_SETTINGS** - Configure security parameters
+ 
  • **media_folder** - Set custom media storage location
+ 
  • **txt_logs_folder** - Set custom logs storage location
 
 
 ### Workflow
 
-# Message Monitoring
+Message Monitoring
 
  1 Bot receives incoming message
+ 
  2 Message is cached in memory
+
  3 If message is deleted, it's saved to database
+ 
  4 Notification is sent to configured chat
+ 
  5 Self-destructing media is automatically saved
 
 Profile Monitoring
 
  1 Admin adds user to monitoring list
+ 
  2 Bot periodically checks user profile
+ 
  3 Changes are detected and logged
+ 
  4 Notifications are sent about profile changes
+ 
  5 Avatar changes are tracked and saved
 
 
 Troubleshooting
 
  • Connection issues: Check Telegram API credentials
+ 
  • Rate limit errors: Increase delay settings in config
+ 
  • Storage issues: Clean up old media and log files
+ 
  • Permission errors: Verify admin IDs in config
+ 
  • OSINT errors: Check API keys and service availability
