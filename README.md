@@ -128,11 +128,11 @@ Parsing Commands
 
 Global Search
 
- • **/search_ch keyword** - Global search for chats
+ • `/search_ch keyword` - Global search for chats
  
- • **/export_search keyword** - Export search results
+ • `/export_search keyword` - Export search results
  
- • **/clear_search keyword** - Clear search results
+ • `/clear_search keyword` - Clear search results
 
 Admin Commands
 
