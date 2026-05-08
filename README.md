@@ -11,7 +11,6 @@
 Advanced Telegram monitoring bot with OSINT capabilities, message tracking, and security features.
 
 
-
 ## Key Features
 
 - **Message Monitoring** - Track deleted messages and self-destructing media
@@ -98,39 +97,57 @@ python main.py
 Monitoring Commands
 
  • `/logg_user chat_id [user_id]` - Start logging user messages
+ 
  • `/stoplogg chat_id [user_id]` - Stop logging
+ 
  • `/export_logs chat_id` - Export chat logs to CSV
+ 
  • `/monitoring` - Manage profile monitoring
+ 
  • `/profile user_id` - Get user profile snapshot
+ 
  • `/avatar_history user_id` - Show user's avatar history
 
 OSINT Commands
 
  • `/username_search username` - Search accounts by username
+ 
  • `/number_user +79991234567` - Search by phone number
+ 
  • `/email_search email@example.com` - Search by email
 
 Parsing Commands
 
  • `/pars all_uss @channel` - Collect user data from channel
+ 
  • `/parsmsg @channel user_id limit` - Collect user messages
+ 
  • `/invite @chat_username` - Invite users from CSV
+ 
  • `/msgcopy message_link` - Copy message from protected chat
 
 Global Search
 
  • **/search_ch keyword** - Global search for chats
+ 
  • **/export_search keyword** - Export search results
+ 
  • **/clear_search keyword** - Clear search results
 
 Admin Commands
 
  • `/deleted` - Show last deleted messages
+ 
  • `/viewonce` - Show saved self-destructing media
+ 
  • `/media` - Show all saved media
+ 
  • `/stats` - Show statistics
+ 
  • `/delete_text_logsstats` - Delete text logs
+ 
  • `/delete_media` - Delete media files
+ 
  • `/cleardb` - Clear user database
 
 
